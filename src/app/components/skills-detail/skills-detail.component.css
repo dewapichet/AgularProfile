@@ -1,0 +1,58 @@
+.main{
+    background: #DCDADA;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    min-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.content{
+    margin-left:1108px;
+    font-family: "Roboto Slab", Thin;
+    padding-top: 30px;
+    text-shadow: 1px 2px 2px #000000;
+}
+.tp-card {
+    margin-top: 5px;
+    max-width: 1250px;
+    margin-left: 520px;
+    background-color: #C4C4C4;
+ }
+.add-icon{
+    margin-left: 1750px;
+    margin-top: 50px;
+}
+.delete-icon{
+    margin-top: 10px;
+    margin-left: 1200px;
+}
+p{
+    text-align: center;
+    width: auto;
+    padding-top: 30px;
+    padding-left: 5px;
+    height: 30px;
+}
+
+
+
+
+
+@media screen and (max-height: 764px) {
+    .content {margin-left: 910px;}
+    .tp-card {
+        margin-top: 5px;
+        max-width: 900px;
+        margin-left: 500px;
+        background-color: #C4C4C4;
+     }
+    .add-icon{
+        margin-left: 1380px;
+        margin-top: 50px;
+    }
+    .delete-icon{
+        margin-top: 10px;
+        margin-left: 850px;
+    }
+  }

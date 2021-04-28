@@ -1,0 +1,17 @@
+<div class="sidenav">
+  <img src={{imgTitle}} width="200px" height="200px" class="image-title">
+  <mat-icon class = "photo-icon">photo_camera</mat-icon>
+  <div class ="menu-bar">
+    <a class="nav-link" routerLinkActive="active" routerLink = "/person-detail"><img src={{iconPersonal}} width="30" class="iconmn">PERSONAL DETAILS</a>
+    <a class="nav-link" routerLinkActive="active" routerLink = "/educate-detail"><img src={{iconEducate}} width="30" class="iconmn">EDUCATION</a>
+    <a class="nav-link" routerLinkActive="active" routerLink = "/skills-detail"><img src={{iconSkill}} width="30" class="iconmn">SKILLS</a>
+  </div>
+  <div class="contact">
+    <a href="https://web.facebook.com/Dew.apichet/"><img src={{iconFb}} alt="facebook" class="iconct"></a>
+    <a href="https://twitter.com/Dewapichet"><img src={{iconTw}} alt="facebook" class="iconct"></a>
+    <a href="https://www.instagram.com/dapcdew.x/?hl=th"><img src={{iconIg}} alt="facebook" class="iconct"></a>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>

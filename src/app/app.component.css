@@ -1,0 +1,82 @@
+.image-title{
+    margin-left: 70px;
+    border-radius: 50%;
+}
+.menu-bar{
+    margin-top: 50px;
+    text-shadow: 1px 1px 2px #000000;
+}
+.sidenav {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    padding-top: 100px;
+    font-family: "Roboto Slab", Thin;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .nav-link{
+    padding: 30px 8px 6px 40px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #333232;
+    display: block;
+    border-bottom: 2px solid #000000;
+    
+  }
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+
+.contact{
+    margin-top: 280px;
+    margin-left: 50px;
+    
+}
+.iconct{
+    margin-left: 20px;
+}
+.iconmn{
+    margin-right: 10px;
+}
+.photo-icon{
+  position: absolute;
+  top: 270px;
+  right: 115px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 0 1px 1px #000000;
+}
+  
+  @media screen and (max-height: 764px) {
+    .sidenav {padding-top: 80px;}
+    .sidenav a {font-size: 18px;}
+    .contact{
+        margin-top: 140px;
+    }
+    .photo-icon{
+      position: absolute;
+      top: 250px;
+      right: 115px;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+    }
+  }

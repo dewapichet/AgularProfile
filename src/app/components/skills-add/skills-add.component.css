@@ -1,0 +1,57 @@
+.main{
+    background: #DCDADA;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    min-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-top: 70px;
+}
+.content{
+    margin-left:1080px;
+    font-family: "Roboto Slab", Thin;
+    padding-top: 30px;
+    text-shadow: 1px 2px 2px #000000;
+}
+
+.tp-card {
+    margin-top: 5px;
+    max-width: 1250px;
+    margin-left: 520px;
+    background-color: #C4C4C4;
+ }
+
+.btn{
+    margin-top: 20px;
+    margin-left: 300px;
+    width: 180px;
+    height: 30px;
+    padding-top: 2px;
+}
+
+
+input{
+    height: 30px;
+    margin-top: 30px;
+}
+
+
+
+@media screen and (max-height: 764px) {
+    .content {margin-left: 850px;}
+    .tp-card {
+        margin-top: 5px;
+        max-width: 900px;
+        margin-left: 500px;
+        background-color: #C4C4C4;
+     }
+     .btn{
+        margin-top: 20px;
+        margin-left: 160px;
+        width: 180px;
+        height: 30px;
+        
+    }
+   
+  }

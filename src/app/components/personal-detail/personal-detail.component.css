@@ -1,0 +1,50 @@
+.main{
+    background: #DCDADA;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    min-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.content{
+    margin-left:970px;
+    font-family: "Roboto Slab", Thin;
+    padding-top: 30px;
+    text-shadow: 1px 2px 2px #000000;
+}
+.content-detail{
+    margin-left:600px;
+    margin-top: 30px;
+    font-family: "Saira", Extra-light;
+}
+.button-edit{
+    margin-left: 950px;
+    margin-top: 30px;
+       
+}
+.btn{
+    width: 300px;
+    height: 30px;
+    padding-top: 1px;
+}
+p{
+    background-color: #ffffff;
+    height: 40px;
+    width: 1050px;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+label{
+    font-size: 12px;
+}
+
+
+@media screen and (max-height: 764px) {
+    .content {margin-left: 810px;}
+    p{background-color: #ffffff;width: 700px;}
+    .button-edit{
+        margin-left: 800px;
+        margin-top: 30px;
+    }
+  }
