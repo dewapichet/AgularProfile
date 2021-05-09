@@ -3,12 +3,11 @@
             <h1>SKILLS</h1>   
     </div>
     <mat-icon class = "add-icon" routerLink='/skills-add'>add</mat-icon>
-    <mat-card class = "tp-card">
+    <mat-card class = "tp-card" *ngFor="let skill of skills; let i = index">
         <mat-card-content>
-            <p>NODEJS</p>
-            <mat-icon class = "delete-icon">delete_outline</mat-icon>
+            <p>{{skills[i].skills_content_skill}}</p>
+            <mat-icon class = "delete-icon" (click)="delete(skills[i].skills_id,i)">delete_outline</mat-icon>
         </mat-card-content>
-        
      </mat-card>
     
 </div>

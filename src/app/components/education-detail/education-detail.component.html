@@ -3,20 +3,21 @@
             <h1>EDUCATION</h1>   
     </div>
     <mat-icon class = "add-icon" routerLink='/educate-add'>add</mat-icon>
-    <mat-card class = "tp-card">
+    <mat-card class = "tp-card" *ngFor="let education of educations; let i = index ">
         <mat-card-content>
            <label>สถานศึกษา</label>
-           <p>มหาวิทยาลัยพะเยา</p>
+           <p>{{educations[i].education_school}}</p>
            <label>คณะ/แผนการเรียน</label>
-           <p>เทคโนโลยีสารสนเทศและการสื่อสาร</p>
+           <p>{{educations[i].education_faculty}}</p>
            <label>สาขา</label>
-           <p>วิศวกรรมซอฟต์แวร์</p>
+           <p>{{educations[i].education_major}}</p>
            <label>ระดับการศึกษา</label>
-           <p>ปริญญาตรี</p>
+           <p>{{educations[i].education_class}}</p>
            <label>เกรดเฉลี่ย</label>
-           <p>3.10</p>
+           <p>{{educations[i].education_grade}}</p>
+           <mat-icon class = "delete-icon" (click)="delete(educations[i].education_id,i)">delete_outline</mat-icon>
         </mat-card-content>
-        <mat-icon class = "delete-icon">delete_outline</mat-icon>
+        
      </mat-card>
     
 </div>

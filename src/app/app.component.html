@@ -1,6 +1,10 @@
 <div class="sidenav">
-  <img src={{imgTitle}} width="200px" height="200px" class="image-title">
-  <mat-icon class = "photo-icon">photo_camera</mat-icon>
+  <img src={{personal.personal_image}} width="200px" height="200px" class="image-title">
+  <label for="uploadimage">
+    <mat-icon class = "photo-icon">photo_camera</mat-icon>
+  </label>
+  
+  <input type="file" (change)="upLoadImage($event)" style="display: none;visibility: none;" id="uploadimage">
   <div class ="menu-bar">
     <a class="nav-link" routerLinkActive="active" routerLink = "/person-detail"><img src={{iconPersonal}} width="30" class="iconmn">PERSONAL DETAILS</a>
     <a class="nav-link" routerLinkActive="active" routerLink = "/educate-detail"><img src={{iconEducate}} width="30" class="iconmn">EDUCATION</a>

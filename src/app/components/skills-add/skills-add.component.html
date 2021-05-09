@@ -4,15 +4,16 @@
     </div>
     <mat-card class = "tp-card">
         <mat-card-content>
-            <form>
+            <form [formGroup]="skillForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
-                    <input type="text" class="form-control" required>
+                    <input type="text" class="form-control"  formControlName="skills_content_skill"required>
+                </div>
+                <div class="button-add">
+                    <button class="btn btn-primary " type="submit">CONFIRM</button>
+                    <button class="btn btn-danger" type="submit" routerLink = '/skills-detail'>CANCEL</button>
                 </div>
             </form>
-            <div class="button-add">
-                <button class="btn btn-primary " type="submit">CONFIRM</button>
-                <button class="btn btn-danger" type="submit" routerLink = '/skills-detail'>CANCEL</button>
-            </div>
+            
         </mat-card-content>
      </mat-card>
     
